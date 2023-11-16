@@ -1,6 +1,6 @@
 # OpenCV Deep Learning based Object Detection
 
-This is a minimal web application built with Streamlit, OpenCV, and deep learning to perform object detection on images using a pre-trained DenseNet-121 model. The project allows users to upload an image file or provide a URL for image analysis.
+This is a minimal web application built with Streamlit, OpenCV and deep learning to perform object detection on images using a pre-trained DenseNet-121 model. The project allows users to upload an image file or provide a URL for image analysis.
 
 ## Demo
 
@@ -38,10 +38,6 @@ Check out the live demo: [OpenCV Object Detection Demo](https://tejjus-object-de
     Visit [http://localhost:8501](http://localhost:8501) in your web browser.
 
 ## Screenshots
-
-![Screenshot from 2023-11-16 13-58-14](https://github.com/Tejjus/object-detector-opencv/assets/112795549/bf9bbcf2-f39a-4309-a218-b9005c075e17)
-![Screenshot from 2023-11-16 13-57-57](https://github.com/Tejjus/object-detector-opencv/assets/112795549/a6feb242-956c-47f7-bd71-c195a2108ef1)
-![Screenshot from 2023-11-16 13-58-52](https://github.com/Tejjus/object-detector-opencv/assets/112795549/ced5d083-c20f-4f4b-bac0-e082afa246cf)
 
 ## File Structure
 
