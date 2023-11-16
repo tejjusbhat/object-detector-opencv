@@ -38,7 +38,10 @@ Check out the live demo: [OpenCV Object Detection Demo](https://tejjus-object-de
     Visit [http://localhost:8501](http://localhost:8501) in your web browser.
 
 ## Screenshots
-
+    ![1](https://github.com/Tejjus/object-detector-opencv/assets/112795549/5a59de05-db69-4945-a2c6-46a779fe1dfe)
+    ![2](https://github.com/Tejjus/object-detector-opencv/assets/112795549/f404150f-a934-4f44-9c2e-68854a3c124d)
+    ![3](https://github.com/Tejjus/object-detector-opencv/assets/112795549/780cdfd0-cb7d-4f03-ab81-f6e73db913c4)
+    
 ## File Structure
 
 - `object-detector-streamlit.py`: Main application script.
