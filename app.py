@@ -141,6 +141,13 @@ def put_efficiency(input_img, net):
   print(label)
   cv2.putText(input_img, label, (20, 80), FONT_FACE, FONT_SCALE, RED, THICKNESS, cv2.LINE_AA)
 
+# caching model weights.
+@st.cache_resource
+def load_model():
+    modelWeights = "yolov5/models/yolov5l.onnx"
+    net = cv2.dnn.readNet(modelWeights)
+    return net
+
 # Read Class names.
 classesFile = "coco.names"
 classes = None
@@ -148,8 +155,7 @@ with open(classesFile, 'rt') as f:
   classes = f.read().rstrip('\n').split('\n')
 
 # Load the network.
-modelWeights = "yolov5/models/yolov5l.onnx"
-net = cv2.dnn.readNet(modelWeights)
+net = load_model()
 
 # Process image.
 detections = pre_process(image, net)
