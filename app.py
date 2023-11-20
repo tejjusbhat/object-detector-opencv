@@ -144,7 +144,7 @@ def put_efficiency(input_img, net):
 # caching model weights.
 @st.cache_resource
 def load_model():
-    modelWeights = "yolov5/models/yolov5l.onnx"
+    modelWeights = "yolov5s.onnx"
     net = cv2.dnn.readNet(modelWeights)
     return net
 
