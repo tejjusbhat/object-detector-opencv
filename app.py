@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 from PIL import Image, UnidentifiedImageError
 import sys
+from io import BytesIO
 from os import path
 import requests
 from requests.models import MissingSchema
@@ -151,8 +152,11 @@ modelWeights = "yolov5/models/yolov5l.onnx"
 net = cv2.dnn.readNet(modelWeights)
 
 # Process image.
-detections = pre_process(frame, net)
-img = post_process(frame.copy(), detections)
+detections = pre_process(image, net)
+img = post_process(image.copy(), detections)
 
 # Put efficiency information.
 put_efficiency(img, net)
+
+# Display output image.
+st.image(img, caption='Output Image', use_column_width=True)
