@@ -2,7 +2,6 @@ numpy
 streamlit
 opencv-python-headless
 pillow
-sys
 os
 io
 requests
